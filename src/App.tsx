@@ -1,9 +1,12 @@
+import { Outlet } from "react-router";
 import "./App.css";
+import SideBar from "./components/SideBar";
 
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <SideBar />
+      <Outlet />
     </>
   );
 }
