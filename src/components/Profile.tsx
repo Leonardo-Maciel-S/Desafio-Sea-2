@@ -2,7 +2,7 @@ import user from "./../assets/user.svg";
 
 const Profile = () => {
   return (
-    <div className="bg-white space-y-8 p-6 xl:max-w-[40%] rounded-3xl shadow-lg">
+    <div className="bg-white space-y-8 p-6 xl:max-w-[40%] rounded-3xl shadow-lg max-h-[400px]">
       <p className="text-medium-gray">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit
         suscipit porttitor. Suspendisse ex lorem, rhoncus nec ante eu, venenatis

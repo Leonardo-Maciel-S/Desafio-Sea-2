@@ -7,7 +7,7 @@ interface MenuSideBarProps {
 const MenuSideBar = ({ icon: Icon }: MenuSideBarProps) => {
   return (
     <div className="flex items-center justify-center bg-gray-default hover:bg-white p-2 rounded-xl relative group cursor-pointer">
-      <span className="hidden w-1 h-full bg-white absolute -left-2.5 group-hover:block" />
+      <span className="hidden w-1 h-full bg-white absolute -left-3 group-hover:block" />
       {Icon && <Icon color="#649fbf" size={25} />}
     </div>
   );
