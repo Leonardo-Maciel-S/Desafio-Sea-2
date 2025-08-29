@@ -1,6 +1,11 @@
 import { FaBuilding } from "react-icons/fa";
 
-const ItemStage = ({ stage }: { stage: number }) => {
+interface ItemStageProps {
+  stage: number;
+  totalStages: number;
+}
+
+const ItemStage = ({ stage, totalStages }: ItemStageProps) => {
   return (
     <>
       <div className="space-y-2 relative">
@@ -13,7 +18,7 @@ const ItemStage = ({ stage }: { stage: number }) => {
         </p>
       </div>
 
-      {stage < 9 && (
+      {stage < totalStages && (
         <div className="flex-1 border-t-4 border-blue-default border-dashed " />
       )}
     </>

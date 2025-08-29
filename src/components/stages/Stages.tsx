@@ -6,7 +6,7 @@ const Stages = () => {
   return (
     <div className="w-full flex items-center bg-white max-h-36 rounded-xl p-6 pb-10 shadow-lg">
       {stagesList.map((stage) => (
-        <ItemStage stage={stage} />
+        <ItemStage stage={stage} totalStages={stagesList.length} />
       ))}
     </div>
   );
