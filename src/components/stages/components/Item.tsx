@@ -3,6 +3,7 @@ import { FaBuilding } from "react-icons/fa";
 interface ItemStageProps {
   stage: number;
   totalStages: number;
+  key?: number;
 }
 
 const ItemStage = ({ stage, totalStages }: ItemStageProps) => {
