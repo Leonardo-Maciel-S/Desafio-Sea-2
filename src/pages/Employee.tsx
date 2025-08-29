@@ -1,11 +1,12 @@
+import EmployeeContainer from "../components/employee/EmployeeContainer";
 import Profile from "../components/Profile";
 
 const Employee = () => {
   return (
-    <div>
+    <div className="flex gap-8 w-full flex-wrap xl:flex-nowrap">
       <Profile />
 
-      <div></div>
+      <EmployeeContainer />
     </div>
   );
 };

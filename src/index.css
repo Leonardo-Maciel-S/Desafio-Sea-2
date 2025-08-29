@@ -12,7 +12,10 @@ body {
 
 @theme {
   --color-blue-default: #649fbf;
+  --color-blue-default-opacity-20: #e0ecf2;
   --color-gray-default: #f2f2f2;
   --color-shadow-default: #272f33;
+  --color-light-gray: #f2f2f2;
   --color-medium-gray: #959595;
+  --color-dark-gray: #707070;
 }
