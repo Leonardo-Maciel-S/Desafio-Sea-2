@@ -2,7 +2,7 @@ import user from "./../assets/user.svg";
 
 const Profile = () => {
   return (
-    <div className="bg-white flex flex-col p-6 gap-8 max-w-[500px] rounded-3xl shadow-lg">
+    <div className="bg-white space-y-8 p-6 xl:max-w-[40%] rounded-3xl shadow-lg">
       <p className="text-medium-gray">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit
         suscipit porttitor. Suspendisse ex lorem, rhoncus nec ante eu, venenatis
