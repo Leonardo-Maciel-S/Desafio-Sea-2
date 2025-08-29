@@ -2,8 +2,12 @@
 
 body {
   background-color: #f2f2f2;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 @theme {
   --color-blue-default: #649fbf;
+  --color-gray-default: #f2f2f2;
+  --color-shadow-default: #272f33;
 }
