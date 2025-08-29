@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
+
 import App from "../App";
-import SideBar from "../components/SideBar";
+import Employee from "../pages/Employee";
 
 export const router = createBrowserRouter([
   {
@@ -9,7 +10,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "employee",
-        Component: SideBar,
+        Component: Employee,
       },
     ],
   },

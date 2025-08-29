@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="flex ">
       <SideBar />
-      <div className="flex gap-8 px-8 py-6 w-full">
+      <div className="flex flex-col gap-8 px-8 py-6 w-full">
         <Stages />
         <Outlet />
       </div>
