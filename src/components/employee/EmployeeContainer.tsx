@@ -1,3 +1,4 @@
+import Switch from "../Switch";
 import AddAndFiltersButtons from "./AddAndFiltersButtons";
 import EmployeeCard from "./EmployeeCard";
 
@@ -21,8 +22,10 @@ const EmployeeContainer = () => {
         </div>
 
         <div className="px-6 py-4 flex justify-end space-x-2">
-          <p>A etapa está concluída?</p>
-          <div>teste</div>
+          <p className="relative left-0">A etapa está concluída?</p>
+          <div className="w-20 flex justify-center">
+            <Switch textOn="Sim" textOff="Não" />
+          </div>
         </div>
       </div>
       <div className="flex justify-end">
