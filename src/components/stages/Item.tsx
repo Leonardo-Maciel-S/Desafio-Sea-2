@@ -14,8 +14,12 @@ const ItemStage = ({ stage, totalStages }: ItemStageProps) => {
           <FaBuilding color="white" size={30} />
         </div>
 
-        <p className="text-center text-d text-blue-default font-medium absolute -bottom-5 left-2.5">
+        <p className="text-center text-blue-default font-medium absolute -bottom-6 left-2.5">
           Item {stage}
+        </p>
+
+        <p className="text-center text-sm text-black font-medium absolute -bottom-10 -left-0">
+          Concluído
         </p>
       </div>
 

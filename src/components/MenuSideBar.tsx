@@ -17,8 +17,10 @@ const MenuSideBar = ({
   return (
     <Link to={destinationPath}>
       <button
-        className={`flex items-center justify-center p-2 rounded-xl relative group cursor-pointer ${
-          isSelected ? "bg-white" : "bg-gray-default hover:bg-white"
+        className={`flex items-center justify-center p-2 rounded-xl relative group  ${
+          isSelected
+            ? "bg-white"
+            : "bg-gray-default hover:bg-white cursor-pointer"
         }`}
         disabled={isSelected}
       >

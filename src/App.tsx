@@ -1,7 +1,6 @@
 import { Outlet } from "react-router";
 import "./App.css";
 import SideBar from "./components/SideBar";
-import Stages from "./components/stages/Stages";
 
 import background from "./assets/background.svg";
 
@@ -10,7 +9,6 @@ function App() {
     <div className="flex relative">
       <SideBar />
       <div className="flex flex-col gap-8 px-8 py-6 w-full">
-        <Stages />
         <Outlet />
       </div>
 
