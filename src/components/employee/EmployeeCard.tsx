@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Info from "./components/Info";
+import Info from "./Info";
 
 const EmployeeCard = () => {
   const active = true;
