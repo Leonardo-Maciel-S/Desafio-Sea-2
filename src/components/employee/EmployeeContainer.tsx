@@ -1,5 +1,5 @@
-import AddAndFiltersButtons from "./components/AddAndFiltersButtons";
-import EmployeeCard from "./components/EmployeeCard";
+import AddAndFiltersButtons from "./AddAndFiltersButtons";
+import EmployeeCard from "./EmployeeCard";
 
 const EmployeeContainer = () => {
   return (
@@ -20,7 +20,10 @@ const EmployeeContainer = () => {
           <EmployeeCard />
         </div>
 
-        <div className="px-6 py-4 flex justify-end">teste</div>
+        <div className="px-6 py-4 flex justify-end space-x-2">
+          <p>A etapa está concluída?</p>
+          <div>teste</div>
+        </div>
       </div>
       <div className="flex justify-end">
         <button
