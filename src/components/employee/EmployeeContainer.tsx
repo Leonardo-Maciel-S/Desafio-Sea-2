@@ -1,8 +1,11 @@
+import useGetEmployees from "../../hooks/getEmployees";
 import Switch from "../Switch";
 import AddAndFiltersButtons from "./AddAndFiltersButtons";
 import EmployeeCard from "./EmployeeCard";
 
 const EmployeeContainer = () => {
+  const { employees } = useGetEmployees();
+
   return (
     <div className="w-full space-y-6">
       <div className="rounded-2xl overflow-hidden w-full bg-white space-y-4 xl:min-w-[740px] shadow-lg">
@@ -13,12 +16,15 @@ const EmployeeContainer = () => {
         <AddAndFiltersButtons />
 
         <div className="px-6 py-4 space-y-4">
-          <EmployeeCard />
-          <EmployeeCard />
-          <EmployeeCard />
-          <EmployeeCard />
-          <EmployeeCard />
-          <EmployeeCard />
+          {employees &&
+            employees.map((employee) => (
+              <EmployeeCard
+                active={employee.active}
+                name={employee.name}
+                cpf={employee.cpf}
+                job={employee.job}
+              />
+            ))}
         </div>
 
         <div className="px-6 py-4 flex justify-end space-x-2">

@@ -1,8 +1,14 @@
 import { useState } from "react";
 import Info from "./Info";
 
-const EmployeeCard = () => {
-  const active = true;
+interface EmployeeCard {
+  active: boolean;
+  name: string;
+  cpf: string;
+  job: string;
+}
+
+const EmployeeCard = ({ active, name, cpf, job }: EmployeeCard) => {
   const bgColor = active ? "bg-blue-default-opacity-20" : "bg-light-gray";
   const [showOptions, setShowOptions] = useState(false);
 
@@ -13,12 +19,12 @@ const EmployeeCard = () => {
   return (
     <div className={`${bgColor} p-4 rounded-xl relative overflow-hidden`}>
       <div className="space-y-2">
-        <h3 className="text-dark-gray text-2xl">Daniel Alves da Silva</h3>
+        <h3 className="text-dark-gray text-2xl">{name}</h3>
 
         <div className="flex items-center gap-4">
-          <Info>000.000.000.45</Info>
-          <Info>Ativo</Info>
-          <Info>Cargo 1</Info>
+          <Info>{cpf}</Info>
+          <Info>{active ? "Ativo" : "Inativo"}</Info>
+          <Info>{job} 1</Info>
         </div>
       </div>
 
